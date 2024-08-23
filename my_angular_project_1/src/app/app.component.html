@@ -1,0 +1,8 @@
+<div>
+  <button (click)="getData()">Get Data</button>
+</div>
+
+<ng-container *ngIf="loadData">
+  <h3>Response Data</h3>
+  <pre>{{ responseData | json }}</pre>
+</ng-container>
